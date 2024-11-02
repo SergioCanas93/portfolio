@@ -1,0 +1,100 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+header{
+    background-color: rgba(224, 194, 82, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: bold;
+}
+
+header a i{
+    color: red;
+    font-size: 2em;
+    padding: 10px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li a{
+    color: rgb(61, 180, 216);
+    padding: 10px;
+}
+
+.titulo_seccion {
+    position: relative;
+    font-size: 40px;
+    color: #003750;
+    text-align: center;
+}
+
+.container {
+max-width: 80px; /* Define el ancho máximo del contenedor */
+margin: 5px auto; /* Centra el contenedor horizontalmente */
+padding: 10px; /* Agrega un poco de espacio alrededor del formulario */
+border: 1px; /* Agrega un borde al contenedor */
+border-radius: 8px; /* Agrega bordes redondeados al contenedor */
+float: left;
+}
+
+.form-group {
+margin-bottom: 20px; /* Espacio entre cada input */
+}
+
+label {
+margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+width: 600px; /* Define el ancho máximo del input */
+padding: 8px;
+border: 1px solid #cccccce8;
+border-radius: 6px;
+}
+
+textarea {
+resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+.form-group {
+    padding: 5px;
+    margin: 10px;
+}
+
+#nombre, #email, #mensaje{
+    color: cornflowerblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    font-size: 15px;
+    padding: 7px;
+}
+
+button:hover {
+background-color: #b9dafd;
+border-radius: 3px;
+}

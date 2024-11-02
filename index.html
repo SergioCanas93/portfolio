@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web</title>
+    <script src="https://kit.fontawesome.com/adc4742b05.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class = "container">
+        <header>
+            <a href="index.html"><i class="fa-solid fa-dragon"></i></a>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de mi</a></li>
+                    <li><a href="#trabajos">Trabajos</a></li>
+                    <li><a href="#servicio">Servicios</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main id = "seccion-principal">
+
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2>Acerca de mi</h2>
+                    <p>Hola, Bienvenido</p>
+                    <p>Mi nombre es Sergio Cañas, soy de Bogotá, Colombia. Tengo 31 años, soy Ingeniero Industrial, pero actualmente me encuentro interesado en la programacion web, deseo aprender todo lo relacionado con el desarrollo web tanto a nivel de backend y de fronted, es por ello que me encuentro desarrollando este curso. He aqui mi primera pagina web.<br>
+                    Gracias por tomarte el tiempo de leer este corto mensaje.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <div class="acercaimagen"><img src="imagenes/acerca.jpg" alt="foto acerca"></div>
+                </div>
+            </section>
+
+            <section class="seccion-2">
+                <H2 id="trabajos">Trabajos</H2>
+                <div class="=contenedorTrabajo">
+                    <div class="trabajo">
+                        <img class="img-trabajo" src="imagenes/ingeniero.png" alt="">
+                        <h3>Trabajo 1</h3>
+                        <p><b>Ingeniero Industrial: </b><br>
+                        <br>Soy Ingeniero Industrial de la Universidad Militar Nueva Granada</p>
+                    </div>
+                    <div class="trabajo">
+                        <img class="img-trabajo" src="imagenes/bordados.png" alt="">
+                        <h3>Trabajo 2</h3>
+                        <p><b>Bordados: </b><br>
+                        <br>Tengo un emprendimiento de bordados, donde se realizan diseños y se bordan</p>
+                    </div>
+                    <div class="trabajo">
+                        <img class="img-trabajo" src="imagenes/petshop.png" alt="">
+                        <h3>Trabajo 3</h3>
+                        <p><b>Pet Shop: </b><br>
+                        <br>Actualmente tengo un emprendimiento de venta de alimentos y accesorios para mascotas</p>
+                    </div>
+                </div>
+            </section>
+            <section class="seccion-3">
+                <img src="imagenes/carrousel.png" alt="imagen de red">
+            </section>
+        </main>
+        <footer id="contacto">
+            <div id="footer">
+                <a href="https://www.google.com/?hl=es"><i class="fa-regular fa-hand-point-left" style="color: khaki;"></i></a>
+                <h3 class="redes">Contacto</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">Tik Tok</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <button id="btn-generar">Generar Frase Aleatoria</button>
+        <footer id="footer">
+            <p id="frase"></p>
+        </footer>
+    <script src="index.js"></script>
+</body>
+</html>

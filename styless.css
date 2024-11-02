@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: rgba(224, 194, 82, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font: bold;
+}
+
+header a i{
+    color: red;
+    font-size: 2em;
+    padding: 10px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li a{
+    color: rgb(61, 180, 216);
+    padding: 10px;
+}
+
+.seccion-1{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+
+#contacto{
+    background-color: darkgray;
+    width: 100%;
+}
+
+#footer {
+    padding: 1em;
+}
+
+#footer h3{
+    color: coral;
+}
+
+#footer nav ul li{
+    margin-top: 1em;
+}
+
+#footer nav ul li a{
+    color: lightgreen;
+}
+
+.seccion-3 .carrusel{
+    width: auto;
+}
+
+a i.fa-regular.fa-hand-point-left{
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 30px;
+}
+
+.contenedor-trabajo{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 2%;
+}
+
+.trabajo{
+    width: 200px;
+    height: 400px;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-trabajo {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 6px;
+   
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: rgb(115, 193, 232);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (min-width: 768px){
+    header{
+        background-color: rgb(240, 217, 81);
+    }
+
+    .trabajo{
+        width: 45%;
+    }
+
+    .acerca-de{
+        text-align: center;
+    }
+
+    .acerca-imagen{
+        margin-bottom: 40px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    #encabezado ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(23, 34, 69);
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+}
+
+@media (min-width: 1024px){
+    .trabajo{
+        width: 30%;
+    }
+}
+
+#btn-generar{
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eaf4db;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#frase{
+    font-size: 18px;
+    color: cornflowerblue;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+}
+    
